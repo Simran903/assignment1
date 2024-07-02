@@ -1,0 +1,106 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f4f4f4;
+}
+
+.container {
+    background-color: #fff;
+    width: 80%;
+    max-width: 900px;
+    margin: 20px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.container::before {
+    content: "";
+    position: absolute;
+    top: 180px;
+    bottom: 20px;
+    left: 50%;
+    width: 1px;
+    background-color: #666;
+    transform: translateX(-50%);
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    font-size: 36px;
+    margin: 0;
+    padding-bottom: 50px;
+}
+
+header h2 {
+    font-size: 18px;
+    color: #666;
+    margin: 5px 0 0 0;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    border-top: 1px solid #ddd;
+}
+
+header .highlight {
+    font-weight: bold;
+}
+
+.main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+}
+
+section {
+    width: 48%;
+    margin-bottom: 20px;
+}
+
+section h3 {
+    font-size: 25px;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+
+.icon-text {
+    display: flex;
+    align-items: center;
+}
+
+.icon-text box-icon {
+    margin-right: 5px;
+}
+
+.contact a,
+.skills p,
+.education p {
+    margin: 5px 0;
+}
+
+.contact p a,
+.about p,
+.skills p,
+.education p,
+.work-experience p,
+.work-experience ul {
+    margin: 10px 0;
+    color: #333;
+}
+
+.work-experience ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
